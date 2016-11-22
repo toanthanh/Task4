@@ -1,0 +1,1 @@
+// Implement the same functionalities as in tasks B and C. Instead of using XMLHttpRequest, use fetch-class.
