@@ -1,7 +1,7 @@
 # AJAX
 
 ## Asynchronous JavaScript And XML
-  * https://fi.wikipedia.org/wiki/Ajax_(ohjelmointi)
+  * https://en.wikipedia.org/wiki/Ajax_(programming)
   * http://www.w3schools.com/xml/ajax_intro.asp
   * http://www.json.org/
   * https://github.com/mattpe/wbma/blob/master/docs/w3-promises.md
