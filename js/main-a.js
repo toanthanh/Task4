@@ -8,7 +8,6 @@ var showImages = function() {
         // then adds the loaded HTML content to <ul> element.
         document.querySelector('ul').innerHTML = this.responseText;
     }
-
 }
 
 // Open XMLHttpRequest connection to load images.html, use get method.
