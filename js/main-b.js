@@ -1,10 +1,7 @@
-// Create XMLHttpRequest object. Name it xhr.
-
 // Create function 'showImages' which
-// checks that loaded content is ready (readyState and status) and
-// then converts the JSON loaded from the server to JavaScript object.
-// Inside the fuction create an empty string 'output' and
-// create a loop which builds the following HTML from every image: 
+// loads images.json which has links to images as an array.
+
+// create a loop which builds the following HTML from every image in the array: 
 /*
 <li>
     <figure>
@@ -15,11 +12,4 @@
     </figure>
 </li>
 */
-// Filename.jpg and Title values are fetched from the JSON object.
-// Add the above HTML to the 'output' variable.
-// After the loop print the HTML (output) into <ul> element.
-// Function ends.
-
-// Open XMLHttpRequest connection to load images.json, use get method.
-// When ready state changes, call showImages function.
-// Send XMLHttpRequest.
+// After the loop print the HTML into <ul> element using innerHTML.
