@@ -1,12 +1,7 @@
-// Tee XMLHttpRequest-objekti. Anna sen nimeksi xhr
-
-// Create XMLHttpRequest object. Name it xhr.
-
 // Create function 'showImages' which
-// checks that loaded content is ready (readyState and status) and
-// then converts the JSON loaded from the server to JavaScript object.
-// Inside the fuction create an empty string 'output' and
-// create a loop which builds the following HTML from every image: 
+// loads images.json which has links to images as an array.
+
+// create a loop which builds the following HTML from every image in the array: 
 /*
 <li>
     <figure>
@@ -16,12 +11,9 @@
         </figcaption>
     </figure>
 </li>
-// Make the HTML elements by using createElement-method and
-// add the attributes by using setAttribute method or element.attribute syntax.
-// Nest the elements with appendChild-method.
-// Finally place the elements into <ul> element to print them to the HTML page
-// Function ends.
-
-// Open XMLHttpRequest connection to load images.json, use get method.
-// When ready state changes, call showImages function.
-// Send XMLHttpRequest.
+*/
+// Make the above HTML by using DOM methods.
+// Create elements with createElement()
+// Add attributes with setAttribute()
+// Add elements with appendChild
+// When the above HTML is ready append it to the <ul> element
