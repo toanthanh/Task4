@@ -24,7 +24,10 @@
   * Use images.json as source for data
   * Open task-b.html and js/main-b.js
   * Check comments in js/main-b.js for more instructions
-  * Some help: https://developer.mozilla.org/en-US/docs/Web/API/Body/json
+  * Some help:
+    * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#String_operators
+    * http://wesbos.com/template-strings-html/
+    * https://developer.mozilla.org/en-US/docs/Web/API/Body/json
 
 ### Tehtävä C 
   * Create similar AJAX application as in task B
