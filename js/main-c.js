@@ -17,3 +17,40 @@
 // Add attributes with setAttribute()
 // Add elements with appendChild
 // When the above HTML is ready append it to the <ul> element
+const showImages = () => {
+  fetch('images.json', {
+    method: 'get'
+  }).then(res => {
+    return res.json()
+  }).then(json => {
+    json.forEach((value) => {
+      let li = document.createElement('li')
+      let figure = document.createElement('figure')
+
+      let a = document.createElement('a')
+      a.href = `img/original/${value.mediaUrl}`
+
+      let img = document.createElement('img')
+      img.src = `img/thumbs/${value.mediaThumb}`
+
+      a.appendChild(img)
+
+      figure.appendChild(a)
+
+      let figcaption = document.createElement('figcaption')
+
+      let h3 = document.createElement('h3')
+      let t = document.createTextNode(value.mediaTitle)
+      h3.appendChild(t)
+
+      figcaption.appendChild(h3)
+
+      figure.appendChild(figcaption)
+
+      li.appendChild(figure)
+      document.querySelector('ul').appendChild(li)
+    })
+  }).catch(err => {
+    console.log(err)
+  })
+}
